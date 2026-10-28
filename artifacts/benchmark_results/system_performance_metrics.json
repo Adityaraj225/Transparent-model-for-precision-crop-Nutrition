@@ -1,0 +1,26 @@
+{
+    "pure_prediction_inference_ms": {
+        "mean": 14.84,
+        "p95": 15.94,
+        "min": 13.49,
+        "max": 17.62,
+        "target_range": "35-50 ms/request"
+    },
+    "shap_explainability_inference_ms": {
+        "mean": 38.79,
+        "p95": 42.85,
+        "min": 35.36,
+        "max": 43.4,
+        "target_range": "~ 120 ms per local explainability"
+    },
+    "cached_station_lookup_ms": {
+        "mean": 0.002,
+        "p95": 0.003,
+        "target": "< 100 ms"
+    },
+    "database_write_persistence_ms": {
+        "mean": 8.6,
+        "p95": 11.59
+    },
+    "throughput_rps": 25.8
+}

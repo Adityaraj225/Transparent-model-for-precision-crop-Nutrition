@@ -1,0 +1,5 @@
+Model,Accuracy,F1_Score_Macro,Precision_Macro,Recall_Macro,Train_Time_s,Latency_ms_sample,Interpretability_Score
+XGBoost,0.8775,0.7327,0.7322,0.7354,0.86,0.0025,4.8
+LightGBM,0.875,0.724,0.7215,0.7282,0.77,0.0077,4.6
+Gradient_Boosting,0.874,0.7339,0.733,0.7361,28.09,0.0114,4.0
+Random_Forest,0.874,0.7082,0.6918,0.7322,0.3,0.0264,4.8

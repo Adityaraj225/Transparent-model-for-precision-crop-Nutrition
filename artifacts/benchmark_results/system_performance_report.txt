@@ -1,0 +1,16 @@
+=== SYSTEM PERFORMANCE & INFERENCE COST EVALUATION ===
+
+╒════════════════════════════╤════════════════╤═══════════════╤═══════════════╤═══════════════╕
+│ Operation / Task           │ Mean Latency   │ P95 Latency   │ Target SLA    │ Status        │
+╞════════════════════════════╪════════════════╪═══════════════╪═══════════════╪═══════════════╡
+│ Pure Prediction Inference  │ 14.84 ms       │ 15.94 ms      │ ~35-50 ms/req │ PASS (< 50ms) │
+├────────────────────────────┼────────────────┼───────────────┼───────────────┼───────────────┤
+│ With SHAP Explainability   │ 38.79 ms       │ 42.85 ms      │ ~120 ms/req   │ PASS (~120ms) │
+├────────────────────────────┼────────────────┼───────────────┼───────────────┼───────────────┤
+│ Cached Agro-Station Lookup │ 0.002 ms       │ 0.003 ms      │ < 100 ms      │ PASS (< 1ms)  │
+├────────────────────────────┼────────────────┼───────────────┼───────────────┼───────────────┤
+│ Database Persistence Write │ 8.6 ms         │ 11.59 ms      │ < 50 ms       │ PASS (< 15ms) │
+╘════════════════════════════╧════════════════╧═══════════════╧═══════════════╧═══════════════╛
+
+Throughput: 25.8 requests/second (with full SHAP decomposition)
+Station Cache: Operational with SQLite fallback

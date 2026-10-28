@@ -1,0 +1,18 @@
+{
+    "holdout_test_set": {
+        "accuracy": "90.46%",
+        "precision": "90.33%",
+        "recall": "91.01%",
+        "f1_score": 0.9067,
+        "roc_auc": 0.9892,
+        "pr_auc": 0.953,
+        "false_negative_rate": "8.99%"
+    },
+    "full_dataset_35499_records": {
+        "accuracy": "97.83%",
+        "recall": "97.74%",
+        "f1_score": 0.9766,
+        "roc_auc": 0.9987,
+        "total_records": 35499
+    }
+}
